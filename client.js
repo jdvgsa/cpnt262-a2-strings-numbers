@@ -54,43 +54,55 @@ function decreaseCount(){
   count--;
 }
 
-/* misunderstood first part of assignment where instructions said
+/* misunderstood first part of assignment where the instructions said
  "increment or decrement a number using ++/--;" 
-I thought I would showcase this part
-in HTML by making a ++/--; button again. will include button made
+I thought I would showcase this part of the instruction
+in HTML by making a ++/--; button again. however I eventually realized
+this was not the intended instructions but will include button made
 with the top part of code for the assignment anyway, figuring it couldn't hurt */
 
-/* convert a number to a string with Number.toString(); */
+//******** work for the assignment ********
 
-let myNum = 10;
+/* increment or decrement a number using ++/--; */
+
+const myNum = 10;
 let increasedNum = myNum + 1;
+let decreasedNum = myNum - 1;
+
 // console.log ("increased number:", increasedNum);
 // increased number: 11
-let decreasedNum = myNum - 1;
 // console.log("decreased number:", decreasedNum);
 // decreased number: 9
+
+/* use of document.querySelector("#id").innerText to render results in HTML page. */
 
 document.querySelector("#ogNum0").innerText = myNum;
 document.querySelector("#ogNum1").innerText = increasedNum;
 document.querySelector("#ogNum2").innerText = decreasedNum;
 
+
 /* convert number (integer to a string with number.toString();) */
 
-
 let numString = myNum.toString();
-// console.log("num to string:", numString);
-// num to string: 10
-// '10' to 10. unsure if you want values should be different.
 document.querySelector("#stringNum").innerText = numString;
 
+// console.log("num to string:", numString);
+// num to string: 10
+// '10' to 10. unsure if you want values to be different. reused 10.
+
+// ***********************************************************************
+
 /* Convert a number to exponential notation with Number.toExponential(); */
-// let myNum = 10;
+// let myNum = 10; redundant code, reusing number 10 for number to expo.
+
 let expoNum = myNum.toExponential();
-// console.log("expoNum:", expoNum);
-// expoNum: 1e+1
 document.querySelector("#expoNum2").innerText = expoNum;
 
+// console.log("expoNum:", expoNum);
+// expoNum: 1e+1
+
+
 /* Const vs Let Example, as taught in class:
-a variable declared with Let can be updated,
-a variable declared with const cannot be modified */
+a variable declared with "let" can be updated,
+a variable declared with "const" cannot be modified */
 
