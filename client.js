@@ -83,3 +83,14 @@ let numString = myNum.toString();
 // '10' to 10. unsure if you want values should be different.
 document.querySelector("#stringNum").innerText = numString;
 
+/* Convert a number to exponential notation with Number.toExponential(); */
+// let myNum = 10;
+let expoNum = myNum.toExponential();
+// console.log("expoNum:", expoNum);
+// expoNum: 1e+1
+document.querySelector("#expoNum2").innerText = expoNum;
+
+/* Const vs Let Example, as taught in class:
+a variable declared with Let can be updated,
+a variable declared with const cannot be modified */
+
